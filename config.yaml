@@ -1,7 +1,7 @@
 ---
 # see https://github.com/nextapps-de/flexsearch#tokenizer-prefix-search for options
 tokenizer: "full" # strict, forward, reverse, full
-custom_domain: "https://registry.geo-data.space"
+custom_domain: "https://registry.perger.net"
 fail_on_validation: true
 searchableAttributes:
   - "prefLabel" # you should not delete this one
@@ -12,7 +12,7 @@ searchableAttributes:
   - "definition"
   - "scopeNote"
 ui:
-  title: "Spatial Focus Registry" # Title is mandatory
+  title: "Perger.net Registry" # Title is mandatory
   logo: "focus.png" # Path
   colors:
     skoHubWhite: "rgb(255, 255, 255)"
