@@ -16,14 +16,14 @@ ui:
   logo: "focus.png" # Path
   colors:
     skoHubWhite: "rgb(255, 255, 255)"
-    skoHubDarkColor: "rgb(15, 85, 75)"
-    skoHubMiddleColor: "rgb(20, 150, 140)"
-    skoHubLightColor: "rgb(40, 200, 175)"
+    skoHubDarkColor: "#014A69"
+    skoHubMiddleColor: "#0070a0"
+    skoHubLightColor: "#009CDF"
     skoHubThinColor: "rgb(55, 250, 210)"
     skoHubBlackColor: "rgb(5, 30, 30)"
     skoHubAction: "rgb(230, 0, 125)"
     skoHubNotice: "rgb(250, 180, 50)"
-    skoHubDarkGrey: "rgb(155, 155, 155)"
+    skoHubDarkGrey: "#151515"
     skoHubMiddleGrey: "rgb(200, 200, 200)"
     skoHubLightGrey: "rgb(235, 235, 235)"
   fonts:
