@@ -21,8 +21,10 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
 
 <https://registry.inspire.gv.at/dataprovider/> a skos:ConceptScheme;
-  dct:title "Geodatenstellen"@en;
-  dct:description "verantwortlich LFRZ und Umweltbundesamt"@en;
+  dct:title "dataprovider"@en, "Geodatenstellen"@de;
+  dct:description "responsible LFRZ und Umweltbundesamt"@en "verantwortlich LFRZ und Umweltbundesamt"@de;
+  dct:issued "2024-09-17" ;
+  vann:preferredNamespaceUri "https://registry.perger.net/Geodatenstellen/" ;
   skos:hasTopConcept <https://registry.inspire.gv.at/dataprovider/0003>, <https://registry.inspire.gv.at/dataprovider/0005>,
     <https://registry.inspire.gv.at/dataprovider/0010>, <https://registry.inspire.gv.at/dataprovider/0018>,
     <https://registry.inspire.gv.at/dataprovider/0019>, <https://registry.inspire.gv.at/dataprovider/0021>,
