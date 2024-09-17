@@ -1,0 +1,343 @@
+@prefix schema: <http://schema.org/> .
+@prefix adms: <http://www.w3.org/ns/adms#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix xls2rdf: <https://xls2rdf.sparna.fr/vocabulary#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
+@prefix dct: <http://purl.org/dc/terms/> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix doap: <http://usefulinc.com/ns/doap#> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+
+<https://registry.inspire.gv.at/dataprovider/> a skos:ConceptScheme;
+  dct:title "Geodatenstellen"@en;
+  dct:description "verantwortlich LFRZ und Umweltbundesamt"@en;
+  skos:hasTopConcept <https://registry.inspire.gv.at/dataprovider/0003>, <https://registry.inspire.gv.at/dataprovider/0005>,
+    <https://registry.inspire.gv.at/dataprovider/0010>, <https://registry.inspire.gv.at/dataprovider/0018>,
+    <https://registry.inspire.gv.at/dataprovider/0019>, <https://registry.inspire.gv.at/dataprovider/0021>,
+    <https://registry.inspire.gv.at/dataprovider/0022>, <https://registry.inspire.gv.at/dataprovider/0023>,
+    <https://registry.inspire.gv.at/dataprovider/0024>, <https://registry.inspire.gv.at/dataprovider/0025>,
+    <https://registry.inspire.gv.at/dataprovider/0043>, <https://registry.inspire.gv.at/dataprovider/0046>,
+    <https://registry.inspire.gv.at/dataprovider/0049>, <https://registry.inspire.gv.at/dataprovider/0051>,
+    <https://registry.inspire.gv.at/dataprovider/0052>, <https://registry.inspire.gv.at/dataprovider/0056>,
+    <https://registry.inspire.gv.at/dataprovider/0131> .
+
+<https://registry.inspire.gv.at/dataprovider/0001> a skos:Concept;
+  skos:prefLabel "AGES"@en, "AGES"@de;
+  skos:definition "Österreichische Agentur für Gesundheit und Ernährungssicherheit GmbH"@en,
+    "Österreichische Agentur für Gesundheit und Ernährungssicherheit GmbH"@de;
+  skos:broader <https://registry.inspire.gv.at/dataprovider/0005>;
+  skos:editorialNote "Spargelfeldstr. 191, 1220 Wien"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0002> a skos:Concept;
+  skos:prefLabel "BEV"@en, "BEV"@de;
+  skos:definition "Bundesamt für Eich- und Vermessungswesen"@en, "Bundesamt für Eich- und Vermessungswesen"@de;
+  skos:broader <https://registry.inspire.gv.at/dataprovider/0051>;
+  skos:editorialNote "Schiffamtsgasse 1-3, 1020 Wien"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0003> a skos:Concept;
+  skos:prefLabel "BMF"@en, "BMF"@de;
+  skos:definition "Bundesministerium für Finanzen"@en, "Bundesministerium für Finanzen"@de;
+  skos:editorialNote "Johannesgasse 5, 1010 Wien"@en;
+  skos:narrower <https://registry.inspire.gv.at/dataprovider/0061>;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/>;
+  skos:topConceptOf <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0005> a skos:Concept;
+  skos:prefLabel "BMLRT"@en, "BMLRT"@de;
+  skos:definition "Bundesministerium für Landwirtschaft, Regionen und Tourismus"@en,
+    "Bundesministerium für Landwirtschaft, Regionen und Tourismus"@de;
+  skos:editorialNote "Stubenring 1, 1010 Wien"@en;
+  skos:narrower <https://registry.inspire.gv.at/dataprovider/0001>, <https://registry.inspire.gv.at/dataprovider/0006>,
+    <https://registry.inspire.gv.at/dataprovider/0009>, <https://registry.inspire.gv.at/dataprovider/0033>,
+    <https://registry.inspire.gv.at/dataprovider/0064>, <https://registry.inspire.gv.at/dataprovider/0065>,
+    <https://registry.inspire.gv.at/dataprovider/0067>, <https://registry.inspire.gv.at/dataprovider/0068>,
+    <https://registry.inspire.gv.at/dataprovider/0078>, <https://registry.inspire.gv.at/dataprovider/0080>,
+    <https://registry.inspire.gv.at/dataprovider/0090>, <https://registry.inspire.gv.at/dataprovider/0095>,
+    <https://registry.inspire.gv.at/dataprovider/0111>, <https://registry.inspire.gv.at/dataprovider/0115>,
+    <https://registry.inspire.gv.at/dataprovider/0130>;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/>;
+  skos:topConceptOf <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0006> a skos:Concept;
+  skos:prefLabel "BFW"@en, "BFW"@de;
+  skos:definition "Bundesforschungs- und Ausbildungszentrum für Wald, Naturgefahren und Landschaft"@en,
+    "Bundesforschungs- und Ausbildungszentrum für Wald, Naturgefahren und Landschaft"@de;
+  skos:broader <https://registry.inspire.gv.at/dataprovider/0005>;
+  skos:editorialNote "Seckendorff-Gudent-Weg 8, 1131 Wien"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0008> a skos:Concept;
+  skos:prefLabel "UBA"@en, "UBA"@de;
+  skos:definition "Umweltbundesamt GmbH"@en, "Umweltbundesamt GmbH"@de;
+  skos:broader <https://registry.inspire.gv.at/dataprovider/0010>;
+  skos:editorialNote "Spittelauer Lände 5, 1090 Wien"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0009> a skos:Concept;
+  skos:prefLabel "WLV"@en, "WLV"@de;
+  skos:definition "Forsttechnischer Dienst für Wildbach- und Lawinenverbauung"@en, "Forsttechnischer Dienst für Wildbach- und Lawinenverbauung"@de;
+  skos:broader <https://registry.inspire.gv.at/dataprovider/0005>;
+  skos:editorialNote "Marxergasse 2, 1030 Wien"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0010> a skos:Concept;
+  skos:prefLabel "BMK"@en, "BMK"@de;
+  skos:definition "Bundesministerium für Klimaschutz, Umwelt, Energie, Mobilität, Innovation und Technologie"@en,
+    "Bundesministerium für Klimaschutz, Umwelt, Energie, Mobilität, Innovation und Technologie"@de;
+  skos:editorialNote "Radetzkystraße 2, 1030 Wien"@en;
+  skos:narrower <https://registry.inspire.gv.at/dataprovider/0008>, <https://registry.inspire.gv.at/dataprovider/0011>,
+    <https://registry.inspire.gv.at/dataprovider/0012>, <https://registry.inspire.gv.at/dataprovider/0013>,
+    <https://registry.inspire.gv.at/dataprovider/0014>;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/>;
+  skos:topConceptOf <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0011> a skos:Concept;
+  skos:prefLabel "ASFINAG"@en, "ASFINAG"@de;
+  skos:definition "ASFINAG Autobahnen- und Schnellstraßen-Finanzierungs-Aktiengesellschaft"@en,
+    "ASFINAG Autobahnen- und Schnellstraßen-Finanzierungs-Aktiengesellschaft"@de;
+  skos:broader <https://registry.inspire.gv.at/dataprovider/0010>;
+  skos:editorialNote "Rotenturmstraße 5-9, 1011 Wien"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0012> a skos:Concept;
+  skos:prefLabel "ACG"@en, "ACG"@de;
+  skos:definition "Austro Control"@en, "Austro Control"@de;
+  skos:broader <https://registry.inspire.gv.at/dataprovider/0010>;
+  skos:editorialNote "Wagramer Straße 19, 1220 Wien"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0013> a skos:Concept;
+  skos:prefLabel "ÖBB"@en, "ÖBB"@de;
+  skos:definition "ÖBB-Infrastruktur AG"@en, "ÖBB-Infrastruktur AG"@de;
+  skos:broader <https://registry.inspire.gv.at/dataprovider/0010>;
+  skos:editorialNote "Praterstern 3, 1020 Wien"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0014> a skos:Concept;
+  skos:prefLabel "via donau"@en, "via donau"@de;
+  skos:definition "via donau - Österreichische Wasserstraßen-Gesellschaft mbH"@en, "via donau - Österreichische Wasserstraßen-Gesellschaft mbH"@de;
+  skos:broader <https://registry.inspire.gv.at/dataprovider/0010>;
+  skos:editorialNote "Donau-City-Straße 1, 1220 Wien"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0015> a skos:Concept;
+  skos:prefLabel "GBA"@en, "GBA"@de;
+  skos:definition "Geologische Bundesanstalt"@en, "Geologische Bundesanstalt"@de;
+  skos:broader <https://registry.inspire.gv.at/dataprovider/0056>;
+  skos:editorialNote "Neulinggasse 38, 1030 Wien"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0018> a skos:Concept;
+  skos:prefLabel "Burgenland"@en, "Burgenland"@de;
+  skos:definition "Land Burgenland - Amt der Burgenländischen Landesregierung"@en, "Land Burgenland - Amt der Burgenländischen Landesregierung"@de;
+  skos:editorialNote "Europaplatz 1, 7000 Eisenstadt"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/>;
+  skos:topConceptOf <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0019> a skos:Concept;
+  skos:prefLabel "Kärnten"@en, "Kärnten"@de;
+  skos:definition "Land Kärnten - Amt der Kärntner Landesregierung"@en, "Land Kärnten - Amt der Kärntner Landesregierung"@de;
+  skos:editorialNote "Flatschacherstraße 70, 9020 Klagenfurt"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/>;
+  skos:topConceptOf <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0021> a skos:Concept;
+  skos:prefLabel "Oberösterreich"@en, "Oberösterreich"@de;
+  skos:definition "Land Oberösterreich - Amt der OÖ Landesregierung"@en, "Land Oberösterreich - Amt der OÖ Landesregierung"@de;
+  skos:editorialNote "Bahnhofplatz 1, 4021 Linz"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/>;
+  skos:topConceptOf <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0022> a skos:Concept;
+  skos:prefLabel "Salzburg"@en, "Salzburg"@de;
+  skos:definition "Land Salzburg - Amt der Salzburger Landesregierung"@en, "Land Salzburg - Amt der Salzburger Landesregierung"@de;
+  skos:editorialNote "Chiemseehof, 5010 Salzburg"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/>;
+  skos:topConceptOf <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0023> a skos:Concept;
+  skos:prefLabel "Steiermark"@en, "Steiermark"@de;
+  skos:definition "Land Steiermark - Amt der Steiermärkischen Landesregierung"@en, "Land Steiermark - Amt der Steiermärkischen Landesregierung"@de;
+  skos:editorialNote "Landhausg. 7, 8010 Graz"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/>;
+  skos:topConceptOf <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0024> a skos:Concept;
+  skos:prefLabel "Tirol"@en, "Tirol"@de;
+  skos:definition "Land Tirol - Amt der Tiroler Landesregierung"@en, "Land Tirol - Amt der Tiroler Landesregierung"@de;
+  skos:editorialNote "Eduard-Wallnöfer-Platz 3, 6020 Innsbruck"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/>;
+  skos:topConceptOf <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0025> a skos:Concept;
+  skos:prefLabel "Vorarlberg"@en, "Vorarlberg"@de;
+  skos:definition "Land Vorarlberg - Amt der Vorarlberger Landesregierung"@en, "Land Vorarlberg - Amt der Vorarlberger Landesregierung"@de;
+  skos:editorialNote "Johannitergasse 6, 6800 Feldkirch"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/>;
+  skos:topConceptOf <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0027> a skos:Concept;
+  skos:definition "Statistik Austria"@en, "Statistik Austria"@de;
+  skos:broader <https://registry.inspire.gv.at/dataprovider/0043>;
+  skos:editorialNote "Guglgasse 13, 1110 Wien"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0033> a skos:Concept;
+  skos:prefLabel "SAG"@en, "SAG"@de;
+  skos:definition "Salzburg AG für Energie, Verkehr &amp; Telekommunikation"@en, "Salzburg AG für Energie, Verkehr &amp; Telekommunikation"@de;
+  skos:broader <https://registry.inspire.gv.at/dataprovider/0005>;
+  skos:editorialNote "Bayerhamerstraße 16, 5020 Salzburg"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0038> a skos:Concept;
+  skos:prefLabel "ZAMG"@en, "ZAMG"@de;
+  skos:definition "Zentralanstalt für Meteorologie und Geodynamik"@en, "Zentralanstalt für Meteorologie und Geodynamik"@de;
+  skos:broader <https://registry.inspire.gv.at/dataprovider/0056>;
+  skos:editorialNote "Hohe Warte 38, 1190 Wien"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0043> a skos:Concept;
+  skos:prefLabel "BKA"@en, "BKA"@de;
+  skos:definition "Bundeskanzleramt Österreich"@en, "Bundeskanzleramt Österreich"@de;
+  skos:editorialNote "Ballhausplatz 2, 1010 Wien"@en;
+  skos:narrower <https://registry.inspire.gv.at/dataprovider/0027>;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/>;
+  skos:topConceptOf <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0046> a skos:Concept;
+  skos:prefLabel "Niederösterreich"@en, "Niederösterreich"@de;
+  skos:definition "Land Niederösterreich - Amt der NÖ Landesregierung"@en, "Land Niederösterreich - Amt der NÖ Landesregierung"@de;
+  skos:editorialNote "Landhausplatz 1, 3109 St. Pölten"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/>;
+  skos:topConceptOf <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0049> a skos:Concept;
+  skos:prefLabel "BMLV"@en, "BMLV"@de;
+  skos:definition "Bundesministerium für Landesverteidigung"@en, "Bundesministerium für Landesverteidigung"@de;
+  skos:editorialNote "Roßauer Lände 1, 1090 Wien"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/>;
+  skos:topConceptOf <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0051> a skos:Concept;
+  skos:prefLabel "BMDW"@en, "BMDW"@de;
+  skos:definition "Bundesministerium für Digitalisierung und Wirtschaftsstandort"@en,
+    "Bundesministerium für Digitalisierung und Wirtschaftsstandort"@de;
+  skos:editorialNote "Stubenring 1, 1011 Wien"@en;
+  skos:narrower <https://registry.inspire.gv.at/dataprovider/0002>;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/>;
+  skos:topConceptOf <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0052> a skos:Concept;
+  skos:prefLabel "Wien"@en, "Wien"@de;
+  skos:definition "Land Wien - Amt der Wiener Landesregierung"@en, "Land Wien - Amt der Wiener Landesregierung"@de;
+  skos:editorialNote "Rathaus, 1082 Wien"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/>;
+  skos:topConceptOf <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0056> a skos:Concept;
+  skos:prefLabel "BMBWF"@en, "BMBWF"@de;
+  skos:definition "Bundesministerium für Bildung, Wissenschaft und Forschung"@en, "Bundesministerium für Bildung, Wissenschaft und Forschung"@de;
+  skos:editorialNote "Minoritenplatz 5, 1010 Wien"@en;
+  skos:narrower <https://registry.inspire.gv.at/dataprovider/0015>, <https://registry.inspire.gv.at/dataprovider/0038>;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/>;
+  skos:topConceptOf <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0061> a skos:Concept;
+  skos:prefLabel "LFRZ"@en, "LFRZ"@de;
+  skos:definition "Land-, forst- und wasserwirtschaftliches Rechenzentrum GmbH"@en,
+    "Land-, forst- und wasserwirtschaftliches Rechenzentrum GmbH"@de;
+  skos:broader <https://registry.inspire.gv.at/dataprovider/0003>;
+  skos:editorialNote "Hintere Zollamtsstraße 4, 1030 Wien"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0064> a skos:Concept;
+  skos:definition "Netz Burgenland GmbH"@en, "Netz Burgenland GmbH"@de;
+  skos:broader <https://registry.inspire.gv.at/dataprovider/0005>;
+  skos:editorialNote "Kasernenstraße 9, 7000 Eisenstadt"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0065> a skos:Concept;
+  skos:definition "Netz Oberösterreich GmbH"@en, "Netz Oberösterreich GmbH"@de;
+  skos:broader <https://registry.inspire.gv.at/dataprovider/0005>;
+  skos:editorialNote "Neubauzeile 99, 4030 Linz"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0067> a skos:Concept;
+  skos:definition "Netz Niederösterreich GmbH"@en, "Netz Niederösterreich GmbH"@de;
+  skos:broader <https://registry.inspire.gv.at/dataprovider/0005>;
+  skos:editorialNote "EVN Platz 1, 2344 Maria Enzersdorf"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0068> a skos:Concept;
+  skos:prefLabel "KNG"@en, "KNG"@de;
+  skos:definition "KNG-Kärnten Netz GmbH"@en, "KNG-Kärnten Netz GmbH"@de;
+  skos:broader <https://registry.inspire.gv.at/dataprovider/0005>;
+  skos:editorialNote "Arnulfplatz 2, 9020 Klagenfurt"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0078> a skos:Concept;
+  skos:prefLabel "TINETZ"@en, "TINETZ"@de;
+  skos:definition "TINETZ-Tiroler Netze GmbH"@en, "TINETZ-Tiroler Netze GmbH"@de;
+  skos:broader <https://registry.inspire.gv.at/dataprovider/0005>;
+  skos:editorialNote "Bert-Köllensperger-Str. 7, 6065 Thaur"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0080> a skos:Concept;
+  skos:definition "VERBUND Hydro Power GmbH"@en, "VERBUND Hydro Power GmbH"@de;
+  skos:broader <https://registry.inspire.gv.at/dataprovider/0005>;
+  skos:editorialNote "Europaplatz 2, 1150 Wien"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0090> a skos:Concept;
+  skos:prefLabel "BAB"@en, "BAB"@de;
+  skos:definition "Bundesanstalt für Agrarwirtschaft und Bergbauernfragen"@en, "Bundesanstalt für Agrarwirtschaft und Bergbauernfragen"@de;
+  skos:broader <https://registry.inspire.gv.at/dataprovider/0005>;
+  skos:editorialNote "Dietrichgasse 27, 1030 Wien"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0095> a skos:Concept;
+  skos:prefLabel "AMA"@en, "AMA"@de;
+  skos:definition "Agrarmarkt Austria"@en, "Agrarmarkt Austria"@de;
+  skos:broader <https://registry.inspire.gv.at/dataprovider/0005>;
+  skos:editorialNote "Dresdner Straße 70, 1200 Wien"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0111> a skos:Concept;
+  skos:definition "Vorarlberger Energienetze GmbH"@en, "Vorarlberger Energienetze GmbH"@de;
+  skos:broader <https://registry.inspire.gv.at/dataprovider/0005>;
+  skos:editorialNote "Weidachstraße 6, 6900 Bregenz"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0115> a skos:Concept;
+  skos:prefLabel "APG"@en, "APG"@de;
+  skos:definition "Austrian Power Grid AG"@en, "Austrian Power Grid AG"@de;
+  skos:broader <https://registry.inspire.gv.at/dataprovider/0005>;
+  skos:editorialNote "Wagramer Straße 19, 1220 Wien"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0130> a skos:Concept;
+  skos:prefLabel "e-netze"@en, "e-netze"@de;
+  skos:definition "Energienetze Steiermark GmbH"@en, "Energienetze Steiermark GmbH"@de;
+  skos:broader <https://registry.inspire.gv.at/dataprovider/0005>;
+  skos:editorialNote "Leonhardgürtel 10, 8010 Graz"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
+
+<https://registry.inspire.gv.at/dataprovider/0131> a skos:Concept;
+  skos:prefLabel "ÖVDAT"@en, "ÖVDAT"@de;
+  skos:definition "Österreichisches Institut für Verkehrsdateninfrastruktur"@en, "Österreichisches Institut für Verkehrsdateninfrastruktur"@de;
+  skos:editorialNote "Bahnhofplatz 5, 9020 Klagenfurt"@en;
+  skos:inScheme <https://registry.inspire.gv.at/dataprovider/>;
+  skos:topConceptOf <https://registry.inspire.gv.at/dataprovider/> .
