@@ -190,6 +190,7 @@
   skos:topConceptOf <https://registry.inspire.gv.at/dataprovider/> .
 
 <https://registry.inspire.gv.at/dataprovider/0027> a skos:Concept;
+  skos:prefLabel "Statistik Austria"@en, "Statistik Austria"@de;
   skos:definition "Statistik Austria"@en, "Statistik Austria"@de;
   skos:broader <https://registry.inspire.gv.at/dataprovider/0043>;
   skos:editorialNote "Guglgasse 13, 1110 Wien"@en;
@@ -264,18 +265,21 @@
   skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
 
 <https://registry.inspire.gv.at/dataprovider/0064> a skos:Concept;
+  skos:prefLabel "Netz Burgenland GmbH"@en, "Netz Burgenland GmbH"@de;  
   skos:definition "Netz Burgenland GmbH"@en, "Netz Burgenland GmbH"@de;
   skos:broader <https://registry.inspire.gv.at/dataprovider/0005>;
   skos:editorialNote "Kasernenstraße 9, 7000 Eisenstadt"@en;
   skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
 
 <https://registry.inspire.gv.at/dataprovider/0065> a skos:Concept;
+  skos:prefLabel "Netz Oberösterreich GmbH"@en, "Netz Oberösterreich GmbH"@de;
   skos:definition "Netz Oberösterreich GmbH"@en, "Netz Oberösterreich GmbH"@de;
   skos:broader <https://registry.inspire.gv.at/dataprovider/0005>;
   skos:editorialNote "Neubauzeile 99, 4030 Linz"@en;
   skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
 
 <https://registry.inspire.gv.at/dataprovider/0067> a skos:Concept;
+  skos:prefLabel "Netz Niederösterreich GmbH"@en, "Netz Niederösterreich GmbH"@de;
   skos:definition "Netz Niederösterreich GmbH"@en, "Netz Niederösterreich GmbH"@de;
   skos:broader <https://registry.inspire.gv.at/dataprovider/0005>;
   skos:editorialNote "EVN Platz 1, 2344 Maria Enzersdorf"@en;
@@ -296,6 +300,7 @@
   skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
 
 <https://registry.inspire.gv.at/dataprovider/0080> a skos:Concept;
+  skos:prefLabel "VERBUND Hydro Power GmbH"@en, "VERBUND Hydro Power GmbH"@de;
   skos:definition "VERBUND Hydro Power GmbH"@en, "VERBUND Hydro Power GmbH"@de;
   skos:broader <https://registry.inspire.gv.at/dataprovider/0005>;
   skos:editorialNote "Europaplatz 2, 1150 Wien"@en;
@@ -316,6 +321,7 @@
   skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
 
 <https://registry.inspire.gv.at/dataprovider/0111> a skos:Concept;
+  skos:prefLabel "Vorarlberger Energienetze GmbH"@en, "Vorarlberger Energienetze GmbH"@de;
   skos:definition "Vorarlberger Energienetze GmbH"@en, "Vorarlberger Energienetze GmbH"@de;
   skos:broader <https://registry.inspire.gv.at/dataprovider/0005>;
   skos:editorialNote "Weidachstraße 6, 6900 Bregenz"@en;
