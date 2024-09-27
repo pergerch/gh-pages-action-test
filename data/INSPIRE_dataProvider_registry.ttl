@@ -1,4 +1,4 @@
-@base <https://registry.perger.net/dataprovider/> .
+@base <https://registry.perger.net/hochschulfaechersystematik/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix schema: <http://schema.org/> .
@@ -10,8 +10,7 @@
   dct:description "verantwortlich LFRZ und Umweltbundesamt"@de, "responsible LFRZ und Umweltbundesamt"@en  ;
   dct:issued "2024-12-09" ;
   vann:preferredNamespacePrefix "gds" ;
-  vann:preferredNamespaceUri "https://registry.perger.net/dataprovider/" ;
-  schema:isBasedOn <https://registry.inspire.gv.at/dataprovider/> ;
+  vann:preferredNamespaceUri "https://registry.perger.net/hochschulfaechersystematik/" ;
   skos:hasTopConcept  <scheme> .
 
 <n1> a skos:Concept ;
