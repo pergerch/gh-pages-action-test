@@ -6,32 +6,29 @@
 
 <scheme> a skos:ConceptScheme ;
   dct:title "Geodatenstellen"@de, "Data Provider"@en ;
-  dct:alternative "Datenerzuger"@de ;
-  dct:description "Dverantwortlich LFRZ und Umweltbundesamt"@de, "responsible LFRZ und Umweltbundesamt"@en,  ;
+  dct:alternative "Datenerzeuger"@de ;
+  dct:description "verantwortlich LFRZ und Umweltbundesamt"@de, "responsible LFRZ und Umweltbundesamt"@en  ;
   dct:issued "2024-12-09" ;
   vann:preferredNamespacePrefix "gds" ;
   vann:preferredNamespaceUri "https://registry.perger.net/dataprovider/" ;
-  schema:isBasedOn <http://bartoc.org/node/18919> ;
-  skos:hasTopConcept  <n1>, <n2>, <n3>, <n4>, <n5>, <n7>, <n8>, <n9> .
+  schema:isBasedOn <https://registry.inspire.gv.at/dataprovider/> ;
+  skos:hasTopConcept  <scheme> .
 
 <n0001> a skos:Concept ;
   skos:prefLabel "AGES"@en, "AGES"@de;
   skos:definition "Österreichische Agentur für Gesundheit und Ernährungssicherheit GmbH"@en,
     "Österreichische Agentur für Gesundheit und Ernährungssicherheit GmbH"@de;
   skos:narrower <n0002> ;
-  skos:broader <n0005>;
   skos:editorialNote "Spargelfeldstr. 191, 1220 Wien"@en;
   skos:inScheme <https://registry.inspire.gv.at/dataprovider/> .
 
 <n0002> a skos:Concept ;
   skos:prefLabel "Sport"@de, "Sports"@en, "Спорт"@uk ;
-  skos:narrower <n22>;
   skos:notation "2" ;
   skos:topConceptOf <scheme> .
 
 <n3> a skos:Concept ;
   skos:prefLabel "Rechts-, Wirtschafts- und Sozialwissenschaften"@de, "Law, Economics and Social Sciences"@en, "Право, економіка та суспільні науки"@uk ;
-  skos:narrower <n23>, <n24>, <n25>, <n26>, <n27>, <n28>, <n29>, <n30>, <n31>, <n32>, <n33>;
   skos:notation "3" ;
   skos:topConceptOf <scheme> .
 
