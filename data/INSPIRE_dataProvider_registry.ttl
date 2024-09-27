@@ -16,25 +16,22 @@
 
 <n1> a skos:Concept ;
   skos:prefLabel "Geisteswissenschaften"@de, "Humanities"@en, "Гуманітарні науки"@uk ;
-  skos:narrower <n01>, <n02>, <n03>, <n04>, <n05>, <n06>, <n07>, <n08>, <n09>, <n10>, <n11>, <n12>, <n13>, <n14>, <n18> ;
   skos:notation "1" ;
   skos:topConceptOf <scheme> .
 
 <n2> a skos:Concept ;
   skos:prefLabel "Sport"@de, "Sports"@en, "Спорт"@uk ;
-  skos:narrower <n22>;
+  skos:narrower <n3>;
   skos:notation "2" ;
   skos:topConceptOf <scheme> .
 
 <n3> a skos:Concept ;
   skos:prefLabel "Rechts-, Wirtschafts- und Sozialwissenschaften"@de, "Law, Economics and Social Sciences"@en, "Право, економіка та суспільні науки"@uk ;
-  skos:narrower <n23>, <n24>, <n25>, <n26>, <n27>, <n28>, <n29>, <n30>, <n31>, <n32>, <n33>;
   skos:notation "3" ;
   skos:topConceptOf <scheme> .
 
 <n4> a skos:Concept ;
   skos:prefLabel "Mathematik, Naturwissenschaften"@de, "Mathematics, Natural Sciences"@en, "Математика, природничі науки"@uk ;
-  skos:narrower   <n36>, <n37>, <n39>, <n40>, <n41>, <n42>, <n43>, <n44> ;
   skos:notation "4" ;
   skos:topConceptOf <scheme> .
 
