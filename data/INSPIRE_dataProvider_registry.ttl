@@ -1,4 +1,4 @@
-@base <https://registry.perger.net/dataprovider/> .
+@base <https://registry.inspire.gv.at/dataprovider/> .
 @prefix schema: <http://schema.org/> .
 @prefix adms: <http://www.w3.org/ns/adms#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
