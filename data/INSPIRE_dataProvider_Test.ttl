@@ -1,11 +1,10 @@
-# INSPIRE Datenprovider.ttl
-@prefix dataprovider: <https://registry.perger.net/dataprovider/> .
+@prefix dataprovider: <https://registry.perger.net/INSPIREdataprovider/> .
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
 dataprovider: a skos:ConceptScheme ;
-    dct:title "dataprovider"@en, "Geodatenstellen"@de ;
+    dct:title "INSPIRE - dataprovider"@en, "INSPIRE - Geodatenstellen"@de ;
     dct:creator "Chris Schubert"@de ;
     dct:created "2024-09-30"^^xsd:date ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
