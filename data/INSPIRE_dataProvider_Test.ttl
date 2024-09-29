@@ -8,7 +8,7 @@ dataprovider: a skos:ConceptScheme ;
     dct:creator "Chris Schubert"@de ;
     dct:created "2024-09-30"^^xsd:date ;
     dct:license <https://creativecommons.org/publicdomain/zero/1.0/> ;
-    skos:hasTopConcept dataprovider:violet, dataprovider:blue .
+    skos:hasTopConcept dataprovider:ages, dataprovider:bev .
 
 dataprovider:ages a skos:Concept ;
     skos:prefLabel "AGES"@de, "AGES"@en ;
@@ -16,7 +16,7 @@ dataprovider:ages a skos:Concept ;
     "Österreichische Agentur für Gesundheit und Ernährungssicherheit GmbH"@de;
     skos:topConceptOf dataprovider: .
 
-dataprovider:blue a skos:Concept ;
+dataprovider:bev a skos:Concept ;
     skos:prefLabel "BEV"@de, "BEV"@en ;
     skos:definition "Bundesamt für Eich- und Vermessungswesen"@en, "Bundesamt für Eich- und Vermessungswesen"@de;
     skos:broader <https://registry.inspire.gv.at/dataprovider/0051>;
