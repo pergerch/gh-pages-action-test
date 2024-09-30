@@ -146,7 +146,7 @@
   skos:definition "vormals GBA, Geologische Bundesanstalt"@en, "Geologische Bundesanstalt"@de;
   skos:broader <https://registry.perger.net/dataprovider/0056>;
   skos:editorialNote "Neulinggasse 38, 1030 Wien"@en;
-  skos:relatedMatch "valid"@de, <https://inspire.ec.europa.eu/registry/status/valid> ;
+  skos:relatedMatch <https://inspire.ec.europa.eu/registry/status/valid> ;
   skos:inScheme <https://registry.perger.net/dataprovider/> .
 
 <https://registry.perger.net/dataprovider/0018> a skos:Concept;
