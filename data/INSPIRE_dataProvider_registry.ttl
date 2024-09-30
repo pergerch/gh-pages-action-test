@@ -22,7 +22,9 @@
 
 <https://registry.perger.net/dataprovider/> a skos:ConceptScheme ;
   dct:title "dataprovider"@en, "Geodatenstellen"@de ;
-  dct:description "responsible LFRZ und Umweltbundesamt"@en, "verantwortlich LFRZ und Umweltbundesamt"@de ;
+  dct:description "responsible LFRZ und Umweltbundesamt"@en, "Die Geodatenstellen ID's werden für die INSPIRE NameSpaces verwendet, verantwortlich LFRZ und Umweltbundesamt"@de ;
+  dct:creator "Chris Schubert"@de ;
+  dct:created "2024-09-30"^^xsd:date ;
   dct:issued "2024-09-17" ;
   skos:hasTopConcept <https://registry.perger.net/dataprovider/0003>, <https://registry.perger.net/dataprovider/0005>,
     <https://registry.perger.net/dataprovider/0010>, <https://registry.perger.net/dataprovider/0018>,
@@ -58,9 +60,9 @@
   skos:topConceptOf <https://registry.perger.net/dataprovider/> .
 
 <https://registry.perger.net/dataprovider/0005> a skos:Concept;
-  skos:prefLabel "BMLRT"@en, "BMLRT"@de;
-  skos:definition "Bundesministerium für Landwirtschaft, Regionen und Tourismus"@en,
-    "Bundesministerium für Landwirtschaft, Regionen und Tourismus"@de;
+  skos:prefLabel "BML"@en, "BML"@de;
+  skos:definition "Bundesministeriums für Land- und Forstwirtschaft, Regionen und Wasserwirtschaft"@en,
+    "Bundesministeriums für Land- und Forstwirtschaft, Regionen und Wasserwirtschaft "@de;
   skos:editorialNote "Stubenring 1, 1010 Wien"@en;
   skos:narrower <https://registry.perger.net/dataprovider/0001>, <https://registry.perger.net/dataprovider/0006>,
     <https://registry.perger.net/dataprovider/0009>, <https://registry.perger.net/dataprovider/0033>,
@@ -83,9 +85,13 @@
 
 <https://registry.perger.net/dataprovider/0008> a skos:Concept;
   skos:prefLabel "UBA"@en, "UBA"@de;
-  skos:definition "Umweltbundesamt GmbH"@en, "Umweltbundesamt GmbH"@de;
+  skos:definition "Umweltbundesamt GmbH"@en, "Umweltbundesamt GmbH, Spittelauer Lände 5, 1090 Wien"@de;
+  skos:relatedMatch <https://www.umweltbundesamt.at> ;
   skos:broader <https://registry.perger.net/dataprovider/0010>;
   skos:editorialNote "Spittelauer Lände 5, 1090 Wien"@en;
+  dct:description "Spittelauer Lände 5, 1090 Wient"@en, "Spittelauer Lände 5, 1090 Wien"@de ;
+  dct:creator "Chris Schubert"@de ;
+  dct:created "2024-09-30"^^xsd:date ;
   skos:inScheme <https://registry.perger.net/dataprovider/> .
 
 <https://registry.perger.net/dataprovider/0009> a skos:Concept;
@@ -136,10 +142,11 @@
   skos:inScheme <https://registry.perger.net/dataprovider/> .
 
 <https://registry.perger.net/dataprovider/0015> a skos:Concept;
-  skos:prefLabel "GBA"@en, "GBA"@de;
-  skos:definition "Geologische Bundesanstalt"@en, "Geologische Bundesanstalt"@de;
+  skos:prefLabel "Geosphere Austria"@en, "Geosphere Austria"@de;
+  skos:definition "vormals GBA, Geologische Bundesanstalt"@en, "Geologische Bundesanstalt"@de;
   skos:broader <https://registry.perger.net/dataprovider/0056>;
   skos:editorialNote "Neulinggasse 38, 1030 Wien"@en;
+  skos:relatedMatch "valid"@de, <https://inspire.ec.europa.eu/registry/status/valid> ;
   skos:inScheme <https://registry.perger.net/dataprovider/> .
 
 <https://registry.perger.net/dataprovider/0018> a skos:Concept;
